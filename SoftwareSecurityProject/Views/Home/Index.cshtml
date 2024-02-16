@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>security-project</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Software Security</h1>
+        <h4>Choose Your Algorithm</h4>
+    </div>
+    <section>
+        <form action = "~/Index" method="post">
+            <div class="options">
+                <div class="check-div">
+                    <label class="container" for="Ceaser">
+                        Ceaser
+                        <input id="Ceaser" name="Algorithm" type="checkbox" value="Ceaser">
+                        <div class="checkmark"></div>
+                    </label>
+                </div>
+                <div class="check-div">
+                    <label class="container" for="Viginere">
+                        Viginere
+                        <input id="Viginere" name="Algorithm" type="checkbox" value="Viginere">
+                        <div class="checkmark"></div>
+                    </label>
+                </div>
+                <div class="check-div">
+                    <label class="container" for="Affine">
+                        Affine
+                        <input id="Affine" name="Algorithm" type="checkbox" value="Affine">
+                        <div class="checkmark"></div>
+                    </label>
+                </div>
+            </div>
+            <section>
+                <h2>
+                    Choose the <span class="Encrption-span">Encrption</span> or <span class="decreption-span">Decrption</span>
+                    Algorithm
+                </h2>
+                <div class="radio-buttons-container">
+                    <div class="radio-button">
+                        <input name="Type" id="Encrption" id="Encrption"
+                               class="radio-button__input"
+                               type="radio" value="Encryption">
+                        <label for="Encrption" class="radio-button__label">
+                            <span class="radio-button__custom"></span>
+                            Encrption
+                        </label>
+                    </div>
+                    <div class="radio-button">
+                        <input name="Type" id="Decrption" class="radio-button__input" required type="radio" value="Decryption">
+                        <label for="Decrption" class="radio-button__label">
+                            <span class="radio-button__custom"></span>
+                            Decrption
+                        </label>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <div class="text-box-one">
+                        <label class="data-one" for="entry-data">Enter your data</label>
+                        <textarea name="entrydata" id="entry-data" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="text-box-two">
+                        <label class="data-one" for="output-data">The Outbut</label>
+                        <textarea name="output-data" id="output-data" cols="30" rows="10">
+                            @ViewBag.result
+                        </textarea>
+                    </div>
+                </div>
+            </section>
+            <div class="save">
+                <button class="shadow__btn" type="submit">Done</button>
+            </div>
+        </form>
+    </section>
+    script
+</body>
+</html>

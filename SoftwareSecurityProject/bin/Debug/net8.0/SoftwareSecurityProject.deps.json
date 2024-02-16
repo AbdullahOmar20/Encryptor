@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SoftwareSecurityProject/1.0.0": {
+        "dependencies": {
+          "Services": "1.0.0",
+          "ServicesContracts": "1.0.0"
+        },
+        "runtime": {
+          "SoftwareSecurityProject.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "ServicesContracts": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        }
+      },
+      "ServicesContracts/1.0.0": {
+        "runtime": {
+          "ServicesContracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SoftwareSecurityProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServicesContracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
